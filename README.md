@@ -1,4 +1,4 @@
-These is the proposal of what projects we are going to work on
+This is the proposal of what projects we are going to work on
 
 ** Proposal **
 Idea 1:
