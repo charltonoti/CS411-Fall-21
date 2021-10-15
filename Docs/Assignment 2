@@ -1,13 +1,31 @@
 User Stories for first proposal:
 
-1) As a logged-in user, I want to change the password at reasonable frequencies to preserve the security of the account so that I can better protect my information.  
-Description: This user story addresses the password feature of the app. Given that we are dealing with financial information, it would be wise for the regularly changing passwords to prevent the possibility of them being hacked.  
+1) As a logged-in user, I want to change the password at reasonable 
+frequencies to preserve the security of the account so that I can better 
+protect my information.
+Description: This user story addresses the password feature of the app. 
+Given that we are dealing with financial information, it would be wise for 
+the regularly changing passwords to prevent the possibility of them being 
+hacked. In case the user forgets their password, they will be able to 
+change their password, by verifying their email address or answering the 
+security question. Users also have a choice to update their password, and 
+in case they decide to change their password. It can’t be the same as 
+previous passwords. We keep track of previous passwords to help prevent 
+password repetition. 
 
-2) As a general login user, I want to receive a daily recommendation of stocks so that I can have a better idea of which stocks I should invest in. 
-Description: This user story addresses the recommendation feature of the app. Our users are interested in stocks, so our app can help our users by providing them recommendations that are suitable for their portfolio.  
+2) As a general login user, I want to receive a daily recommendation of 
+stocks so that I can have a better idea of which stocks I should invest in.
+Description: This user story addresses the recommendation feature of the 
+app. Our users are interested in stocks, so our app can help our users by 
+providing them recommendations that are suitable for their portfolio. 
 
-3) As a logged-in user, I should be able to access additional information about the stock (its price history, P/E ratio etc) so that I can make an informed choice of buying or selling it. 
-Description: This user story addresses the stock-related information the app will provide for logged-in users. Since knowing information about the stock is essential to investing, our app should provide these details to users. 
+3) As a logged-in user, I should be able to access additional information
+ about the stock (its price history, P/E ratio etc) so that I can make an 
+ informed choice of buying or selling it.
+Description: This user story addresses the stock-related information the 
+app will provide for logged-in users. Since knowing information about the 
+stock is essential to investing, our app should provide these details to 
+users.
 
-4) As a logged-in user, I want to get stock recommendations based on my Twitter activities, so that I can have stock recommendations based on my interests. 
-Description: This user story addresses the ability of our app to give our user stock recommendations based on their Twitter activity. This will help tailor recommendations for stocks to our user’s interests based on their actions on Twitter. 
+4) As a logged-in user, I want to get stock recommendations based on my Twitter activities, so that I can have stock recommendations based on my interests.
+Description: This user story addresses the ability of our app to give our user stock recommendations based on their Twitter activity. This will help tailor recommendations for stocks to our user’s interests based on their actions on Twitter.
