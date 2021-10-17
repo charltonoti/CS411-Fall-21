@@ -1,0 +1,2 @@
+## As a logged in user, I want the app to recommend me a cocktail for the currently playing playlist and to give me the recipe in the app
+There should not be any links outside of the app, as this would disrupt the user experience. Any recipe that is scraped/given to them should be accessible in the app. The recipe should also relate to the playlist that is currently playing, for instance, becoming more sweet or a higher % content when the BPM of the song is slower. 
