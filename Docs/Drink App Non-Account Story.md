@@ -1,0 +1,2 @@
+## As a non-account user, I want to be able to create an account and be able to get recommendations for a random playlist
+ This user story addresses people who have not used the service before and do not want to make an account/hand over data to test the service. A person should be able to connect their spotify account to the service without a password, and once convinced of the service, create an account without losing the drink that they have already been recommended
