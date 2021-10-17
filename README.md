@@ -1,1 +1,1 @@
-Assignment 2 is under Docs directory
+Assignment 2 (user stories) is under Docs directory
