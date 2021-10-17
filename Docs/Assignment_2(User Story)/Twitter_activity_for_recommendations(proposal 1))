@@ -1,0 +1,6 @@
+• As a logged-in user, I want to get stock recommendations based on my Twitter activities, so that I can have stock recommendations based on my interests.
+
+◦ Description: This user story addresses the ability of our app to give our user stock recommendations based on their Twitter activity. 
+  This will help tailor recommendations for stocks to our user’s interests based on their actions on Twitter. The user can associate his
+  or her Twitter account with the account for our app, and by turning on the option to recommend stocks based on Twitter, the user will
+  see recommendations based on his or her twitter account in the daily recommendations of stock as the daily recommendation user story describes.
