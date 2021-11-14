@@ -26,4 +26,22 @@ def getTweets(input, numTweets, days_ago):
             break
     return tweetList
 
-    
+def store_tweets(passed_tweet_list, file):
+    tweetList = []
+    for tweet in passed_tweet_list:
+        tweet_info = dict()
+        tweet_info['text'] = tweet.text
+        tweet_info['creation'] = tweet.created_at.strftime("%m-%d-%Y %H:%M:%S")
+        tweet_info['screen_name'] = tweet.user.screen_name
+        tweet_info['retweet_count'] = tweet.retweet_count
+        tweet_info['likes'] = tweet.favorite_count
+        tweet_info['followers_count'] = tweet.user.followers_count
+        tweetList.append(tweet_info)
+    file_to_open = open(file, 'w')
+    json.dump(tweetList, file_to_open, indent = 4, sort_keys = True)
+    file_to_open.flush()
+    file_to_open.close()
+
+def retrieve_tweets(input, tweets_to_open, days_ago):
+    tweets = getTweets(input, tweets_to_open, days_ago)
+    store_tweets(tweets, 'CS411-Fall-21\\retrieved_tweets.json')
