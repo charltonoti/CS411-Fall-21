@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Nov 16 14:20:09 2021
-
-@author: we609
-"""
-
 import yfinance as yf
 import time
 import datetime
@@ -14,7 +7,7 @@ import sys
 
 
 def search_stock(stock_name):
-    
+    # search a stock with its symbol utilize yahoo! finance API and return relative information.
     stock_data = yf.Ticker(stock_name)
 
 
