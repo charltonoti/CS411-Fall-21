@@ -27,9 +27,9 @@ def search_stock(stock_name):
     output_dic['currency'] = stock_infor['currency']
     output_dic['recommendationKey'] = stock_infor['recommendationKey']
     output_dic['linkToStockPage'] = f'https://finance.yahoo.com/quote/{stock_name}?p={stock_name}&.tsrc=fin-srch'
-    result = json.dumps(output_dic, indent = 4)
+    #result = json.dumps(output_dic, indent = 4)
     
-    return result
+    return output_dic
     
 
     
