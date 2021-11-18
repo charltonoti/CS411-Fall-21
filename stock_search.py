@@ -12,7 +12,7 @@ def search_stock(stock_name):
     stock_infor = stock_data.info
     output_dic = {}
     
-    if 'dayHigh' not in stock_name:
+    if 'dayHigh' not in stock_infor:
         output_dic['txt'] = "Sorry, please reenter the symbol for the stock or try this link"
         output_dic['linkToStockPage'] = f'https://finance.yahoo.com/quote/{stock_name}?p={stock_name}&.tsrc=fin-srch'
         result = json.dumps(output_dic, indent = 4)
