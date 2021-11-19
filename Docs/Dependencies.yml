@@ -1,0 +1,8 @@
+name: twitter_stock
+dependencies:
+  - python==3.9
+  - pip
+  - pip:
+    - yfinance
+    - tweepy
+
