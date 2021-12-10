@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.contrib.auth.models import User
+from django.views.generic import View
 
 # Create your views here.
 from django.http import HttpResponse
@@ -9,9 +11,21 @@ import os
 import json
 import sys
 
+class HomeView(View):
+      def get(self, request):
+        num_users = User.objects.count()
+        login_url = ""
+        return render(
+            request,
+            'stocktweetapp/login.html',
+            {'login_url': login_url, 'num_users': num_users},
+            )
 
 def index(request):
 	return render(request, 'stocktweetapp/index.html')
+
+def login(request):
+    	return render(request, 'stocktweetapp/login.html')
 
 
 def search_stock(request):
