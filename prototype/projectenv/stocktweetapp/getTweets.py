@@ -4,17 +4,15 @@ import datetime
 import os
 import json
 import sys
-from keys import key
-from keys import secret
-from keys import consumer_key
-from keys import consumer_secret
+from . import keys
 import yfinance as yf
 
 
+"""
 auth = tweepy.OAuthHandler(key, secret)
 auth.set_access_token(consumer_key, consumer_secret)
 api = tweepy.API(auth, wait_on_rate_limit = True)
-
+"""
 
 def getTweets(input_, numTweets, days_ago):
     #getting tweets

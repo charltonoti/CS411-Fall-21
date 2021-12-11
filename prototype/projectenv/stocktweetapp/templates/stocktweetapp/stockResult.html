@@ -55,17 +55,18 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="login">Sign in/Sign up</a>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled">Disabled</a>
         </li>
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <form class="d-flex" method=POST action="{% url 'search_stock' %}">
+      {% csrf_token %}
+        <input class="form-control me-2" name = "search" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
     </div>
@@ -74,15 +75,15 @@
 
 <main class="container">
   <div class="bg-light p-5 rounded">
-    <h1>Here is your Search result</h1>
+    <h1>Here is your Search Result</h1>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/json2html/2.1.0/json2html.min.js"></script>
     <p>Symbol: {{symbol}}</p>
-    <p>Name: {{Name}}</p>
+    <p>Name: {{name}}</p>
     <p>Current_Price: {{currentPrice}}</p>
     <p>DayHigh: {{dayHigh}}</p>
     <p>DayLow: {{dayLow}}</p>
     <p>Currency: {{currency}}</p>
-    <p>Institudes Recommendation: {{linkToStockPage}}
+    <p>Institudes Recommendation: {{recommendationKey}}
     <p>For more information: {{linkToStockPage}}</p>
     
 

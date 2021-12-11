@@ -10,7 +10,10 @@ import datetime
 import os
 import json
 import sys
-import getTweets
+import tweepy
+from . import getTweets
+
+
 
 
 class HomeView(View):
@@ -66,16 +69,13 @@ def search_stock(request):
     
     
 
-def stock_recommendation(request):
+#def stock_recommendation(request):
     
     
     
     
     
-    
-    
-    
-    
+
     
     
     
