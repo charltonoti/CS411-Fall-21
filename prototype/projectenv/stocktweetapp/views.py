@@ -10,6 +10,8 @@ import datetime
 import os
 import json
 import sys
+import getTweets
+
 
 class HomeView(View):
       def get(self, request):
@@ -26,6 +28,9 @@ def index(request):
 
 def login(request):
     	return render(request, 'stocktweetapp/login.html')
+
+
+
 
 
 def search_stock(request):
@@ -58,5 +63,41 @@ def search_stock(request):
         return render(request, 'stockResult.html', context)  
     else:
         return render(request, 'stocktweetapp/index.html')
+    
+    
+
+def stock_recommendation(request):
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 
