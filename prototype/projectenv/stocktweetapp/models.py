@@ -7,14 +7,14 @@ class Stock(models.Model):
 	image = models.ImageField(upload_to = 'images/')
 	summary = models.CharField(max_length = 100)
 
-
 	def __str__(self):  #current instance of the class
 		return self.summary
 
 class Recommendations(models.Model):
     
     daily_recommemdation = models.CharField(max_length=5000)
-    pub_date = models.DateTimeField('date published')
+    pub_date = models.CharField(max_length=100)
+    
     def __str__(self):
         return self.daily_recommemdation
     
