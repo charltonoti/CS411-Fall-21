@@ -6,5 +6,5 @@ For high-level requirements:
 1. we use sqlite3 database to store recommendation information to enhance performance.
 2. The public API we utilize is Twitter API (tweepy) and Yfinance API. 
 3. We also use a third-party authentication by Github. User need to login to Github before they can use our app, but the search function is free for all. 
-4. It have decoupled architecture, different layer could use different language. JavaScript in the front end, and Python in the backend.
+4. It have decoupled architecture, different layer use different language. JavaScript in the front end, and Python in the backend.
 
