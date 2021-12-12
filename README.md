@@ -1,1 +1,1 @@
-Assignment 3 is under Docs directory，and protocol codes is under prototype directory. 
+All documents is under Docs directory，and app is in deliver directory. 
