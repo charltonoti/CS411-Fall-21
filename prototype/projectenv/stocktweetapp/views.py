@@ -13,19 +13,18 @@ import json
 import sys
 import tweepy
 import ast
+from django.views.generic import TemplateView
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 
-
-class HomeView(View):
-      def get(self, request):
-        num_users = User.objects.count()
-        login_url = ""
-        return render(
-            request,
-            'stocktweetapp/login.html',
-            {'login_url': login_url, 'num_users': num_users},
-            )
+class HomeView(LoginRequiredMixin, TemplateView):
+    template_name = "home.html" 
+    
+    
+    
+    
+    
 
 def index(request):
 	return render(request, 'stocktweetapp/index.html')
