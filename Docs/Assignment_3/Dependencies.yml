@@ -5,4 +5,6 @@ dependencies:
   - pip:
     - yfinance
     - tweepy
+    - social-auth-app-django
+    - django
 
